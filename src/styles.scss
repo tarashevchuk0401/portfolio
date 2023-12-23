@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '../src/assets/styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+
+$color_green: #4c8b57;
+$color_grey: #f4f4f4;
+$color_black: #464a4e;
+$color_dark_blue: #16336a;
+
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+    // font-family: 'IBM Plex Sans', sans-serif;
+}
+
+* {
+    color: $color_black;
+    margin: 0;
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
