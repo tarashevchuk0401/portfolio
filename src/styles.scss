@@ -12,7 +12,7 @@ html,
 body {
     height: 100%;
     box-sizing: border-box;
-    // font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 * {
@@ -25,3 +25,89 @@ body {
     text-decoration: none;
 }
 
+hr {
+    border: 2px solid #464a4e;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.button1 {
+    background-color: white;
+    color: #464a4e;
+    border: 1px solid #464a4e;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-in .2s;
+
+    &:hover {
+        background-color: #f4f4f4;
+        color: #4c8b57;
+        border: 1px solid #4c8b57;
+    }
+}
+
+.fromLeft {
+    animation-name: fromLeft;
+}
+
+.fromRight {
+    animation-name: fromRight;
+}
+
+.fromBottom {
+    animation-name: fromBottom;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromBottom {
+    0% {
+        transform: translateY(300px);
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

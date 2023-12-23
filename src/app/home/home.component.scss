@@ -5,7 +5,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4;
 }
 
 .header {
@@ -21,43 +20,53 @@
         animation-duration: .8s;
         animation-timing-function: ease-out;
         text-shadow: 1px 1px 1px #b1aeae,
-                    1px 2px 1px #b1aeae,
-                    1px 3px 1px #b1aeae,
-                    1px 4px 1px #b1aeae,
-                    1px 5px 1px #b1aeae,
-                    1px 6px 1px #b1aeae,
-                    1px 7px 1px #c7c7c7,
-                    1px 20px 40px rgba(0, 0, 0, 0.3)
-    
+            1px 2px 1px #b1aeae,
+            1px 3px 1px #b1aeae,
+            1px 4px 1px #b1aeae,
+            1px 5px 1px #b1aeae,
+            1px 6px 1px #b1aeae,
+            1px 7px 1px #c7c7c7,
+            1px 20px 40px rgba(0, 0, 0, 0.3)
     }
-    
+
     // .first {}
-    
+
     .second {
         margin-left: 250px;
         margin-top: 0;
     }
 }
 
-.info{
+.info {
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin-top: 50px;
     font-family: 'IBM Plex Sans', sans-serif;
-    
-    border: 3px solid #444444;
     padding: 20px;
+    // border-top: 2px solid #464a4e;
 
-    img{
+
+    img {
         animation-name: fromBottom;
         animation-duration: 1.2s;
         animation-timing-function: ease-out;
         width: 250px;
         border-radius: 25%;
     }
-    
-    .info_text{
+
+    .square {
+        animation-name: fromBottom;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-out;
+        background-color: #4c8b57;
+        width: 250px;
+        height: 250px;
+        border-radius: 25%;
+
+    }
+
+    .info_text {
         animation-name: fromRight;
         animation-duration: 1.2s;
         animation-timing-function: ease-out;
@@ -65,68 +74,28 @@
         font-size: 20px;
 
 
-        p{
+        p {
             margin-top: 20px;
             text-align: justify;
         }
 
-        ul{
+        ul {
             margin-top: 20px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             height: 150px;
         }
-        li{
+
+        li {
             list-style: circle;
         }
 
-        h2,h3{
+        h3,
+        h4 {
             margin-top: 20px;
         }
     }
 
 
 }
-
-
-
-@keyframes fromLeft {
-    0% {
-        transform: translateX(-1000px);
-        opacity: 0.3;
-    }
-    50%{
-        opacity: 0.7;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-  }
-@keyframes fromRight {
-    0% {
-        transform: translateX(1000px);
-        opacity: 0.3;
-    }
-    50%{
-        opacity: 0.7;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-  }
-@keyframes fromBottom {
-    0% {
-        transform: translateY(300px);
-        opacity: 0.0;
-    }
-    50%{
-        opacity: 0.7;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-  }

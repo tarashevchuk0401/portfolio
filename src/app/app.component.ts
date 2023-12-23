@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @Component({
@@ -16,7 +17,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     HeaderComponent,
     MatSidenavModule,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    PortfolioComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
