@@ -2,7 +2,22 @@
 <!-- <button (click)="drawer.toggle()"></button> -->
 
 <div class="main_wrapper">
-  <app-header></app-header>
+  <div class="header">
+    <!-- <app-header></app-header> -->
+    <div class="header_wrapper fromRight">
+      <div class="action">
+        <div class="action_section left">
+          <button class="button_header" (click)="navigateTo(breakpointAboutMe)">About Me</button>
+          <button class="button_header" (click)="navigateTo(breakpointPortfolio)">Portfolio</button>
+          <button class="button_header" (click)="navigateTo(breakpointContact)">Contact</button>
+        </div>
+        <div class="action_section  right">
+          <button class="button_header">Upload CV</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <!-- <button (click)="drawer.toggle()"></button> -->
 
   <!-- Sidenav -->
@@ -13,11 +28,15 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <!-- MAIN -->
+      <hr #breakpointAboutMe>
       <app-home></app-home>
       <hr #breakpointPortfolio>
-      @defer (on viewport(breakpointPortfolio)) {
+      @defer (on idle) {
       <app-portfolio></app-portfolio>
-      <hr>
+      }
+      <hr #breakpointContact>
+      @defer (on idle) {
+        <app-contact></app-contact>
       }
     </mat-sidenav-content>
   </mat-sidenav-container>
