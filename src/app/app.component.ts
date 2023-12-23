@@ -29,7 +29,7 @@ export class AppComponent  {
   title = 'portfolio';
 
   navigateTo(element: HTMLElement){
-    const yOffset = element.offsetTop - 5;
+    const yOffset = element.offsetTop ;
     window.scrollTo({
       top: yOffset
     })
