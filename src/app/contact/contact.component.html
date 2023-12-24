@@ -1,16 +1,25 @@
-<!-- <form class="contact-form"  (submit)="sendEmail($event)">
-    <label>Name</label>
-    <input type="text" name="user_name">
-    <label>Email</label>
-    <input type="email" name="user_email">
-    <label>Message</label>
-    <textarea name="message"></textarea>
-    <input type="submit" value="Send">
-</form> -->
-
 <form #mail="ngForm" (ngSubmit)="sendEmail(mail)">
-    <input type="text" name="user_name" ngModel placeholder="name" id="name">
-    <input type="email" name="user_email" ngModel placeholder="email" id="email">
-    <textarea name="message" id="message" ngModel></textarea>
-    <button type="submit">Send</button>
+    <!-- Name -->
+    <div class="form_section">
+        <label for="">Your name:</label>
+        <input type="text" name="name" ngModel placeholder="Name" id="name">
+    </div>
+    <!-- Email -->
+    <div class="form_section">
+        <label for="">Your email*:</label>
+        <input type="email" name="email" ngModel placeholder="Email*" id="email"
+            pattern="^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$" required>
+    </div>
+    <!-- Message -->
+    <div class="form_section">
+        <label for="">Message*:</label>
+        <textarea name="message" rows="5" id="message" ngModel required placeholder="Message*"></textarea>
+    </div>
+    <!-- Error -->
+    <div class="invisible" [ngClass]="{'error' : mail.controls['email'].invalid &&  mail.controls['email'].touched}">
+        Please enter valid email</div>
+    <div class="invisible" [ngClass]="{'error' : mail.controls['message'].invalid &&  mail.controls['message'].touched}">
+        Please write some message</div>
+    <!-- Submit -->
+    <button type="submit" class="button1" [disabled]="mail.invalid">Send</button>
 </form>

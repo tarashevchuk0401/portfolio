@@ -51,6 +51,13 @@ h2 {
         color: #4c8b57;
         border: 1px solid #4c8b57;
     }
+
+    &:disabled{
+        pointer-events: none;
+        background-color: #e7e5e5;
+        color: #97999a;
+        border: none;
+    }
 }
 
 .fromLeft {
