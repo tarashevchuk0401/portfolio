@@ -29,21 +29,50 @@
             width: 100%;
             object-fit: contain;
         }
-        .project_name{
+
+        .project_name {
             font-size: 24px;
             font-weight: 500;
         }
 
-        .project_desription{
+        .project_desription {
             margin-top: 10px;
             text-align: justify;
         }
 
-        .project_action{
+        .project_action {
             display: flex;
             justify-content: space-evenly;
             width: 100%;
             margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding-top: 20px;
+    }
+
+    .container {
+        margin-top: 25px;
+
+        .project {
+            width: 300px;
+            margin: 10px;
+            padding: 5px;
+
+            .project_name {
+                font-size: 18px;
+            }
+
+            .project_desription {
+                margin-top: 10px;
+            }
+
+            .project_action {
+                margin-top: 7px;
+            }
         }
     }
 }

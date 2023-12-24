@@ -1,43 +1,43 @@
-<!-- <app-header></app-header> -->
-<!-- <button (click)="drawer.toggle()"></button> -->
-
 <div class="main_wrapper">
   <div class="header">
     <!-- <app-header></app-header> -->
     <div class="header_wrapper fromRight">
+      <button class="button_header menu_btn" #menuBtn (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
       <div class="action">
         <div class="action_section left">
-          <button class="button_header" (click)="navigateTo(breakpointAboutMe)">About me</button>
-          <button class="button_header" (click)="navigateTo(breakpointPortfolio)">Portfolio</button>
-          <button class="button_header" (click)="navigateTo(breakpointContact)">Contact</button>
+          <button class="button_header button2" (click)="navigateTo('aboutMe')">About me</button>
+          <button class="button_header button2" (click)="navigateTo('portfolio')">Portfolio</button>
+          <button class="button_header button2" (click)="navigateTo('contact')">Contact</button>
         </div>
         <div class="action_section  right">
           <a href="https://drive.google.com/file/d/1nsD7Qj5lvTL0rkd-zQRInKrK-9ci9TVX/view?usp=drive_link"
-           class="button_header" >See my CV</a>
+            class="button_header button2">See my CV</a>
         </div>
       </div>
     </div>
-
   </div>
-  <!-- <button (click)="drawer.toggle()"></button> -->
 
   <!-- Sidenav -->
   <mat-sidenav-container [hasBackdrop]="true">
     <mat-sidenav #drawer mode="over" closed>
       <!-- Sidebar -->
-      <app-sidebar></app-sidebar>
+      @defer (on interaction(menuBtn)) {
+      <app-sidebar (navigateTo)="navigateTo($event)"></app-sidebar>
+      }
     </mat-sidenav>
     <mat-sidenav-content>
       <!-- MAIN -->
-      <hr #breakpointAboutMe>
+      <div class="breakpointAboutMe" #breakpointAboutMe></div>
       <app-home></app-home>
-      <hr #breakpointPortfolio>
+      <hr class="breakpointPortfolio" #breakpointPortfolio>
       @defer (on idle) {
       <app-portfolio></app-portfolio>
       }
-      <hr #breakpointContact>
+      <hr class="breakpointContact" #breakpointContact>
       @defer (on idle) {
-        <app-contact></app-contact>
+      <app-contact></app-contact>
       }
     </mat-sidenav-content>
   </mat-sidenav-container>
