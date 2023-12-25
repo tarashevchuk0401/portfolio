@@ -4,12 +4,13 @@ import { FormsModule, NgForm } from '@angular/forms';
 // import { EmailJSResponseStatus } from '@emailjs/browser';
 import emailjs from '@emailjs/browser';
 import { EmailJSResponseStatus } from '@emailjs/browser';
+import { TranslocoRootModule } from '../transloco.root.module';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslocoRootModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

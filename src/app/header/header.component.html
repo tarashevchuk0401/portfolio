@@ -1,12 +1,18 @@
-<div class="wrapper fromRight">
+<div class="header_wrapper fromRight">
     <div class="action">
         <div class="action_section left">
-            <button class="button_header">About Me</button>
-            <button class="button_header">Portfolio</button>
-            <button class="button_header">Contact</button>
+            <button class="button_header button2" (click)="navigateToElement('aboutMe')">{{'About me' | transloco}}</button>
+            <button class="button_header button2" (click)="navigateToElement('portfolio')">{{'Portfolio' | transloco}}</button>
+            <button class="button_header button2" (click)="navigateToElement('contact')">{{'Contact' | transloco}}</button>
         </div>
         <div class="action_section  right">
-            <button class="button_header">Upload CV</button>
+            <button mat-button [matMenuTriggerFor]="languageMenu">Language</button>
+            <mat-menu #languageMenu="matMenu">
+                <button mat-menu-item (click)="onLanguageChange('en')">EN</button>
+                <button mat-menu-item (click)="onLanguageChange('pl')">PL</button>
+            </mat-menu>
+            <a href="https://drive.google.com/file/d/1nsD7Qj5lvTL0rkd-zQRInKrK-9ci9TVX/view?usp=drive_link"
+                class="button_header button2">{{"See my CV" | transloco}}</a>
         </div>
     </div>
 </div>

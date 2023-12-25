@@ -1,25 +1,25 @@
 <form #mail="ngForm" (ngSubmit)="sendEmail(mail)">
     <!-- Name -->
     <div class="form_section">
-        <label for="">Your name:</label>
+        <label for="">{{"Your name" | transloco}}:</label>
         <input type="text" name="name" ngModel placeholder="Name" id="name">
     </div>
     <!-- Email -->
     <div class="form_section">
-        <label for="">Your email*:</label>
-        <input type="email" name="email" ngModel placeholder="Enter Email*" id="email"
+        <label for="">{{"Your email" | transloco}}*:</label>
+        <input type="email" name="email" ngModel placeholder="Enter Email*"  id="email"
             pattern="^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$" required>
     </div>
     <!-- Message -->
     <div class="form_section">
-        <label for="">Message*:</label>
+        <label for="">{{'Message' | transloco}}*:</label>
         <textarea name="message" rows="5" id="message" ngModel required placeholder="Write something*"></textarea>
     </div>
     <!-- Error -->
     <div class="invisible" [ngClass]="{'error' : mail.controls['email'].invalid &&  mail.controls['email'].touched}">
-        Please enter valid email</div>
+        {{'Please enter valid email' | transloco}}</div>
     <div class="invisible" [ngClass]="{'error' : mail.controls['message'].invalid &&  mail.controls['message'].touched}">
-        Please write some message</div>
+        {{"Please write some message" | transloco}}</div>
     <!-- Submit -->
-    <button type="submit" class="button1" [disabled]="mail.invalid">Send</button>
+    <button type="submit" class="button1" [disabled]="mail.invalid">{{"Send" | transloco}}</button>
 </form>

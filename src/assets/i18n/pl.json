@@ -1,0 +1,22 @@
+
+{
+  "common": {
+    "languages": {
+      "en": "Angielski",
+      "pl": "Polski"
+    }
+  },
+  "foodStorage": "Magazyn Jedzenia",
+  "About me": "O mnie",
+  "Portfolio": "Portfolio",
+  "Contact" : "Kontakt",
+  "See my CV": "Moje CV",
+  "Your name" : "Twoje imie",
+  "Your email" : "Twój email",
+  "Message" : "Wiadomość",  
+  "Please enter valid email": "Proszę poprawny wpisać email",
+  "Please write some message" : "Proszę wpisać wiadomość",
+  "Send": "Wyślij",
+  "Enter Email*" : "Email",
+  "Hi, my name is Taras.": "Cześć, mam na imie Taras."
+}

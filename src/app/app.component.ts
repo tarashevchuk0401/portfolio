@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, LOCALE_ID, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
@@ -8,6 +8,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
+import { TranslocoRootModule } from './transloco.root.module';
+import { TranslocoService } from '@ngneat/transloco';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 @Component({
   selector: 'app-root',
@@ -21,15 +25,26 @@ import { MatIconModule } from '@angular/material/icon';
     SidebarComponent,
     PortfolioComponent,
     ContactComponent,
-    MatIconModule
+    MatIconModule,
+    TranslocoRootModule,
+    MatMenuModule
+
   ],
+  // providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
+
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'portfolio';
+  private readonly translocoService = inject(TranslocoService)
+
 
   constructor(private el: ElementRef) { }
+
+  onLanguageChange(event: string) {
+    this.translocoService.setActiveLang(event)
+  }
 
   navigateTo(element: string) {
     const aboutMe: HTMLElement = this.el.nativeElement.querySelector('.breakpointAboutMe');
@@ -48,9 +63,13 @@ export class AppComponent {
         yOffset = contact.offsetTop;
         break;
     }
-    
+
     window.scrollTo({
       top: yOffset
     })
   }
 }
+function takeUntilDestroyed(): import("rxjs").OperatorFunction<any, unknown> {
+  throw new Error('Function not implemented.');
+}
+
