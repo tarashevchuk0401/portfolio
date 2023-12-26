@@ -1,1 +1,29 @@
-{}
+{
+    "common": {
+        "languages": {
+            "en": "Angielski",
+            "ua": "Ukrainian"
+        }
+    },
+    "About me": "Про мене",
+    "Portfolio": "Портфоліо",
+    "Contact": "Контакт",
+    "See my CV": "Моє CV",
+    "Your name": "Твоє ім'я",
+    "Your email": "Твій емейл",
+    "Message": "Повідомлення",
+    "Please enter valid email": "Впишіть, будь ласка, еиейл",
+    "Please write some message": "Впишіть, будь ласка, повідомлення",
+    "Send": "Відправити",
+    "Enter Email*": "Емейл",
+    "Hi, my name is Taras.": "Привіт, мене звати Тарас.",
+    "I'm junior frontend developer. I'm using Angular to create responsive and user-friendly websites and web applications. It's a pleasure to see that my product is useful for someone. Also, I'm highly motivated to grow and learn new technologies.Looking for a job in a friendly team where I could grow and be useful for the company which I will work for.": "Я джуніор фронтенд розробник. Я використовую Angular для створення адаптивних і зручних веб-сайтів і веб-додатків. Приємно бачити, що мій продукт комусь стане в нагоді. Крім того, я дуже мотивований розвиватися та вивчати нові технології. Шукаю роботу в дружній команді, де я міг би рости та бути корисним для компанії, в якій буду працювати.",
+    "Technologies": "Технології",
+    "Go to website": "Подивитись веб сайт",
+    "View GitHub": "Подивитись GitHub",
+    "This is online bike shope, with authorization and cart. User can sort products by categories and by price, add item to the cart and change quantity. In administration mode is possible to add new product to the data base or delete it.": "Це інтернет-магазин велосипедів з авторизацією та кошиком. Користувач може сортувати товари за категоріями та ціною, додавати товар у кошик та змінювати кількість. У режимі адміністратора можна додати новий продукт до бази даних або видалити його.",
+    "This project is a simple ToDo application built with Angular for the frontend and Node.js for the backend. Here we have authorization, so each user are able to see only own information .": "Цей проект — це проста програма ToDo, створена за допомогою Angular для інтерфейсу та Node.js для бекенда. Тут у нас є авторизація, тому кожен користувач може бачити лише власну інформацію.",
+    "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant. In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.": "Сайт для невеликого ресторану (та кейтерингу). Під капотом знаходиться адміністративна панель, де власник може редагувати все меню, завантажувати фотографії та змінювати інформацію про ресторан. У цьому проекті я працював з UI/UX дизайнером і покращував свої навички спілкування з клієнтом.",
+    "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant.": "Сайт для невеликого ресторану (та кейтерингу). Під капотом знаходиться адміністративна панель, де власник може редагувати все меню, завантажувати фотографії та змінювати інформацію про ресторан.",
+    "In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.": "Над цим проектом я працював з UI/UX дизайнером і покращував свої навички спілкування з клієнтом."
+}

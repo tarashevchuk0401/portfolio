@@ -5,6 +5,27 @@
       "en": "English",
       "pl": "Polish"
     }
-  }
+  },
+  "About me" : "About me",
+  "Portfolio": "Portfolio",
+  "Contact": "Contact",
+  "See my CV": "See my CV",
+  "Your name": "Your name",
+  "Your email": "Your email",
+  "Message": "Message",
+  "Please enter valid email": "Please enter valid email",
+  "Please write some message": "Please write some message",
+  "Send": "Send",
+  "Enter Email*": "Enter Email*",
+  "Hi, my name is Taras.": "Hi, my name is Taras.",
+  "I'm junior frontend developer. I'm using Angular to create responsive and user-friendly websites and web applications. It's a pleasure to see that my product is useful for someone. Also, I'm highly motivated to grow and learn new technologies.Looking for a job in a friendly team where I could grow and be useful for the company which I will work for.": "I'm junior frontend developer. I'm using Angular to create responsive and user-friendly websites and web applications. It's a pleasure to see that my product is useful for someone. Also, I'm highly motivated to grow and learn new technologies.Looking for a job in a friendly team where I could grow and be useful for the company which I will work for.",
+  "Technologies": "Technologies",
+  "Go to website": "Go to website",
+  "View GitHub": "View GitHub",
+  "This is online bike shope, with authorization and cart. User can sort products by categories and by price, add item to the cart and change quantity. In administration mode is possible to add new product to the data base or delete it.": "This is online bike shope, with authorization and cart. User can sort products by categories and by price, add item to the cart and change quantity. In administration mode is possible to add new product to the data base or delete it.",
+  "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant.": "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant.",
+  "In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.": "In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.",
+  "This project is a simple ToDo application built with Angular for the frontend and Node.js for the backend. Here we have authorization, so each user are able to see only own information .": "This project is a simple ToDo application built with Angular for the frontend and Node.js for the backend. Here we have authorization, so each user are able to see only own information .",
+  "": ""
 
 }

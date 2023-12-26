@@ -1,11 +1,37 @@
-nav{
+nav {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    
-    .sidebar_btn{
-        margin: 15px ;
+    // justify-content: space-between;
+
+    .sidebar_btn {
+        margin: 15px;
         font-size: 20px;
         font-weight: 400;
     }
+}
+
+.button_lang {
+    margin-top: 200px;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    margin-right: 5px;
+
+}
+
+.language_btn {
+    display: flex;
+    border-top: 1px solid #4444;
+    border-bottom: 1px solid #4444;
+}
+
+.bottom{
+    margin-top: 18vh;
 }

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, inject } from '@angular/core';
+import { Component, EventEmitter, OnChanges, Output, SimpleChanges, inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { TranslocoService } from '@ngneat/transloco';
 import {MatMenuModule} from '@angular/material/menu';
@@ -12,17 +12,20 @@ import { TranslocoRootModule } from '../transloco.root.module';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
-  private readonly translocoService = inject(TranslocoService)
+export class HeaderComponent  {
+  private readonly translocoService = inject(TranslocoService);
+  language: string = 'en'
   
   @Output() navigateTo = new EventEmitter<string>();
+
 
   navigateToElement(element: string) {
     this.navigateTo.emit(element);
   }  
   
-  onLanguageChange(event: string) {
-    this.translocoService.setActiveLang(event)
+  onLanguageChange(lang: string) {
+    this.translocoService.setActiveLang(lang);
+    this.language = lang;
   }
 
 

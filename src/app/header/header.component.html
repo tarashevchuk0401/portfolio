@@ -1,15 +1,56 @@
 <div class="header_wrapper fromRight">
     <div class="action">
         <div class="action_section left">
-            <button class="button_header button2" (click)="navigateToElement('aboutMe')">{{'About me' | transloco}}</button>
-            <button class="button_header button2" (click)="navigateToElement('portfolio')">{{'Portfolio' | transloco}}</button>
-            <button class="button_header button2" (click)="navigateToElement('contact')">{{'Contact' | transloco}}</button>
+            <button class="button_header button2" (click)="navigateToElement('aboutMe')">{{'About me' |
+                transloco}}</button>
+            <button class="button_header button2" (click)="navigateToElement('portfolio')">{{'Portfolio' |
+                transloco}}</button>
+            <button class="button_header button2 " (click)="navigateToElement('contact')">{{'Contact' |
+                transloco}}</button>
         </div>
         <div class="action_section  right">
-            <button mat-button [matMenuTriggerFor]="languageMenu">Language</button>
+            <button class="button_header button2 button_lang" mat-button [matMenuTriggerFor]="languageMenu">
+                @switch (language) {
+                @case('en'){
+                <div class="flag">
+                    <img src="assets/img/en.png" alt="en">
+                    <div>EN</div>
+                </div>
+                }
+                @case('pl'){
+                <div class="flag">
+                    <img src="assets/img/pl.png" alt="pl">
+                    <div>PL</div>
+                </div>
+                }
+                @case ('ua') {
+                <div class="flag">
+                    <img src="assets/img/ua.png" alt="ua">
+                    <div>UA</div>
+                </div>
+                }
+                }
+
+            </button>
             <mat-menu #languageMenu="matMenu">
-                <button mat-menu-item (click)="onLanguageChange('en')">EN</button>
-                <button mat-menu-item (click)="onLanguageChange('pl')">PL</button>
+            <button class="language_btn" mat-menu-item (click)="onLanguageChange('en')">
+                <div class="flag">
+                    <img src="assets/img/en.png" alt="">
+                        <div>EN</div>
+                    </div>
+                </button>
+                <button class="language_btn" mat-menu-item (click)="onLanguageChange('pl')">
+                    <div class="flag">
+                        <img src="assets/img/pl.png" alt="">
+                        <div>EN</div>
+                    </div>
+                </button>
+                <button class="language_btn" mat-menu-item (click)="onLanguageChange('ua')">
+                    <div class="flag">
+                        <img src="assets/img/ua.png" alt="">
+                        <div>EN</div>
+                    </div>
+                </button>
             </mat-menu>
             <a href="https://drive.google.com/file/d/1nsD7Qj5lvTL0rkd-zQRInKrK-9ci9TVX/view?usp=drive_link"
                 class="button_header button2">{{"See my CV" | transloco}}</a>

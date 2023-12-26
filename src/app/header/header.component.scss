@@ -1,55 +1,9 @@
-// .wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     background-color: none;
-//     background: rgba(255, 255, 255, 0.2);
-//     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-//     backdrop-filter: blur(5px);
-//     animation-duration: .7s;
-//     animation-timing-function: ease-in;
-// }
-
-// .action {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 100%;
-
-//     .action_section {
-//         margin: 0 20px;
-//     }
-
-
-// }
-
-// .button_header {
-//     background: none;
-//     font-size: 26px;
-//     // font-weight: 600;
-//     border: none;
-//     color: black;
-//     padding: 15px 10px;
-//     margin: 0 10px;
-//     transition: all ease-out .2s;
-//     cursor: pointer;
-
-//     &:hover {
-//         color: #4c8b57;
-//     }
-
-// }
-
 .header_wrapper {
-    display: flex;
-    justify-content: space-between;
-    background-color: none;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
     animation-duration: .7s;
     animation-timing-function: ease-in;
 }
 
-.menu_btn{
+.menu_btn {
     display: none;
     background: none;
 }
@@ -57,20 +11,43 @@
 .action {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
 
     .action_section {
         margin: 0 20px;
+        display: flex;
+        align-items: center;
     }
-
-
 }
 
 .button_header {
     padding: 15px 10px;
     transition: all ease-out .2s;
     cursor: pointer;
+}
+
+.language_btn {
+    display: flex;
+    border-top: 1px solid #4444;
+    border-bottom: 1px solid #4444;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_lang {
+    padding: 0;
+    margin-right: 15px;
+}
+
+img {
+    width: 40px;
+    border-radius: 55px;
+    padding: 0 7px;
 }
 
 @media (max-width: 768px) {
@@ -81,17 +58,17 @@
         padding: 8px 6px;
     }
 
-    .action{
+    .action {
         display: none;
     }
 
-    .menu_btn{
+    .menu_btn {
         display: block;
         padding: 10px;
         margin-left: 15px;
     }
 
-    mat-sidenav{
+    mat-sidenav {
         display: block;
     }
 }

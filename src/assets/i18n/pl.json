@@ -1,4 +1,3 @@
-
 {
   "common": {
     "languages": {
@@ -9,14 +8,23 @@
   "foodStorage": "Magazyn Jedzenia",
   "About me": "O mnie",
   "Portfolio": "Portfolio",
-  "Contact" : "Kontakt",
+  "Contact": "Kontakt",
   "See my CV": "Moje CV",
-  "Your name" : "Twoje imie",
-  "Your email" : "Twój email",
-  "Message" : "Wiadomość",  
+  "Your name": "Twoje imie",
+  "Your email": "Twój email",
+  "Message": "Wiadomość",
   "Please enter valid email": "Proszę poprawny wpisać email",
-  "Please write some message" : "Proszę wpisać wiadomość",
+  "Please write some message": "Proszę wpisać wiadomość",
   "Send": "Wyślij",
-  "Enter Email*" : "Email",
-  "Hi, my name is Taras.": "Cześć, mam na imie Taras."
+  "Enter Email*": "Email",
+  "Hi, my name is Taras.": "Cześć, mam na imie Taras.",
+  "I'm junior frontend developer. I'm using Angular to create responsive and user-friendly websites and web applications. It's a pleasure to see that my product is useful for someone. Also, I'm highly motivated to grow and learn new technologies.Looking for a job in a friendly team where I could grow and be useful for the company which I will work for.": "Cześć. Jestem junior frontend developerem. Używam Angulara do tworzenia responsywnych i przyjaznych dla użytkownika stron internetowych i aplikacji internetowych. Miło mi widzieć, że mój produkt jest użyteczny dla kogoś. Mam także dużą motywację do rozwoju i poznawania nowych technologii. Poszukuję pracy w przyjaznym zespole, w której mógłbym się rozwijać i być przydatnym dla firmy, w której będę pracować.",
+  "Technologies": "Technologie",
+  "Go to website": "Zobacz stronę",
+  "View GitHub": "Zobacz GitHub",
+  "This is online bike shope, with authorization and cart. User can sort products by categories and by price, add item to the cart and change quantity. In administration mode is possible to add new product to the data base or delete it.": "Internetowy   sklep rowerowy z autoryzacją i koszykiem. Użytkownik może sortować produkty według kategorii i ceny, dodawać produkty do koszyka oraz zmieniać ich ilość. W trybie administracyjnym istnieje możliwość dodania nowego produktu do bazy danych lub jego usunięcia.",
+  "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant.": "Strona internetowa dla małej restauracji (i cateringu). Pod maską znajduje się panel administracyjny, w którym właściciel może edytować całe menu, dodawać zdjęcia i zmieniać informacje o restauracji.",
+  "In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.": "W tym projekcie współpracowałem z dizajnerem UI/UX. Nie zapomnij przełączyć się w aplikacji na język angielski.",
+  "This project is a simple ToDo application built with Angular for the frontend and Node.js for the backend. Here we have authorization, so each user are able to see only own information .": "Ten projekt to prosta aplikacja ToDo zbudowana z Angularem dla frontendu i Node.js dla backendu. Tutaj mamy autoryzację, więc każdy użytkownik może zobaczyć tylko swoje informacje.",
+  "": ""
 }
