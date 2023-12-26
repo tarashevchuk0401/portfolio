@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 :host{
     display: flex;
     justify-content: center;
@@ -28,7 +30,7 @@ form{
             font-size: 20px;
             padding: 10px;
             margin-right: 50px;
-            border: 1px solid #464a4e;
+            border: 1px solid $color_black;
             border-radius: 10px;
         }
     }

@@ -1,8 +1,9 @@
+@import '../variables.scss';
+
 nav {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
 
     .sidebar_btn {
         margin: 15px;
@@ -23,13 +24,12 @@ nav {
 
 img {
     margin-right: 5px;
-
 }
 
 .language_btn {
     display: flex;
-    border-top: 1px solid #4444;
-    border-bottom: 1px solid #4444;
+    border-top: 1px solid $color_black;
+    border-bottom: 1px solid $color_black;
 }
 
 .bottom{

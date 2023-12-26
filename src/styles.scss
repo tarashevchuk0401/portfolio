@@ -1,12 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-// @import '../src/assets/styles/variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+@import 'app/variables.scss';
 
-
-$color_green: #4c8b57;
-$color_grey: #f4f4f4;
-$color_black: #464a4e;
-$color_dark_blue: #16336a;
+// $color_blue: rgba(0, 163, 251, 0.2)
 
 html,
 body {
@@ -26,7 +22,7 @@ body {
 }
 
 hr {
-    border: 2px solid #464a4e;
+    border: 2px solid $color_black;
 }
 
 h2 {
@@ -36,8 +32,8 @@ h2 {
 
 .button1 {
     background-color: white;
-    color: #464a4e;
-    border: 1px solid #464a4e;
+    color: $color_black;
+    border: 1px solid $color_black;
     border-radius: 10px;
     padding: 7px;
     font-size: 20px;
@@ -48,15 +44,15 @@ h2 {
     text-align: center;
 
     &:hover {
-        background-color: #f4f4f4;
-        color: #4c8b57;
-        border: 1px solid #4c8b57;
+        background-color: $color_grey;
+        color: $color_green;
+        border: 1px solid $color_green;
     }
 
     &:disabled{
         pointer-events: none;
-        background-color: #e7e5e5;
-        color: #97999a;
+        background-color: rgba(100, 100, 100, 0.267);
+        color: $color_grey;
         border: none;
     }
 }
@@ -67,10 +63,10 @@ h2 {
     font-weight: 500;
     text-align: center;
     border: none;
-    color: black;
+    color: $color_black;
 
     &:hover {
-        color: #4c8b57;
+        color: $color_green;
     }
 }
 
@@ -134,13 +130,13 @@ h2 {
     }
 }
 
+
 @media (max-width: 768px) {
      .button1{
-        font-size: 12px;
+        font-size: 14px;
         border-radius: 5px;
-        padding: 5px;
+        padding: 6px;
         font-weight: 300;
-        margin: 5px;
-        
+        margin: 5px;  
      }   
 }

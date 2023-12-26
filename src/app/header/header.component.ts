@@ -10,7 +10,7 @@ import { TranslocoRootModule } from '../transloco.root.module';
   standalone: true,
   imports: [MatIconModule, MatMenuModule, TranslocoRootModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss', 
 })
 export class HeaderComponent  {
   private readonly translocoService = inject(TranslocoService);
