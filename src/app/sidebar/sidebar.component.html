@@ -5,7 +5,7 @@
             transloco}}</button>
         <button class="button2 sidebar_btn" (click)="navigateToElement('contact')">{{"Contact" | transloco}}</button>
         <a href="https://drive.google.com/file/d/1nsD7Qj5lvTL0rkd-zQRInKrK-9ci9TVX/view?usp=drive_link"
-            class="button2 sidebar_btn">See my CV</a>
+            class="button2 sidebar_btn">{{"See my CV" |transloco}}</a>
     </div>
     <div class="bottom">
         <button class="sidebar_btn button2 button_lang" mat-button [matMenuTriggerFor]="languageMenu">
@@ -30,25 +30,25 @@
             }
             }
         </button>
+        <mat-menu #languageMenu="matMenu">
+            <button class="language_btn" mat-menu-item (click)="onLanguageChange('en')">
+                <div class="flag">
+                    <img src="assets/img/en.png" alt="">
+                    <div>EN</div>
+                </div>
+            </button>
+            <button class="language_btn" mat-menu-item (click)="onLanguageChange('pl')">
+                <div class="flag">
+                    <img src="assets/img/pl.png" alt="">
+                    <div>PL</div>
+                </div>
+            </button>
+            <button class="language_btn" mat-menu-item (click)="onLanguageChange('ua')">
+                <div class="flag">
+                    <img src="assets/img/ua.png" alt="">
+                    <div>UA</div>
+                </div>
+            </button>
+        </mat-menu>
     </div>
-    <mat-menu #languageMenu="matMenu">
-        <button class="language_btn" mat-menu-item (click)="onLanguageChange('en')">
-            <div class="flag">
-                <img src="assets/img/en.png" alt="">
-                <div>EN</div>
-            </div>
-        </button>
-        <button class="language_btn" mat-menu-item (click)="onLanguageChange('pl')">
-            <div class="flag">
-                <img src="assets/img/pl.png" alt="">
-                <div>PL</div>
-            </div>
-        </button>
-        <button class="language_btn" mat-menu-item (click)="onLanguageChange('ua')">
-            <div class="flag">
-                <img src="assets/img/ua.png" alt="">
-                <div>UA</div>
-            </div>
-        </button>
-    </mat-menu>
 </nav>

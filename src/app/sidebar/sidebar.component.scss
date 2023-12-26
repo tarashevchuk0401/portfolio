@@ -4,16 +4,14 @@ nav {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
 
     .sidebar_btn {
         margin: 15px;
         font-size: 20px;
         font-weight: 400;
     }
-}
-
-.button_lang {
-    margin-top: 200px;
 }
 
 .flag {
@@ -30,8 +28,4 @@ img {
     display: flex;
     border-top: 1px solid $color_black;
     border-bottom: 1px solid $color_black;
-}
-
-.bottom{
-    margin-top: 18vh;
 }

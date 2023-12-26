@@ -24,7 +24,7 @@
         animation-name: fromLeft;
         animation-duration: .8s;
         animation-timing-function: ease-out;
-        text-shadow: 1px 1px 1px $color_grey,
+        text-shadow: 1px 1px 1px  #b1aeae,
             1px 2px 1px #b1aeae,
             1px 3px 1px #b1aeae,
             1px 4px 1px #b1aeae,
@@ -49,7 +49,7 @@
 
     .info_photo_img {
         animation-name: fromBottom;
-        animation-duration: 1.2s;
+        animation-duration: 1s;
         animation-timing-function: ease-out;
         width: 250px;
         border-radius: 25%;
@@ -57,16 +57,7 @@
         margin-right: 8px;
     }
 
-    .square {
-        animation-name: fromBottom;
-        animation-duration: 1.2s;
-        animation-timing-function: ease-out;
-        background-color: $color_green;
-        width: 250px;
-        height: 250px;
-        border-radius: 25%;
 
-    }
 
     .info_text {
         animation-name: fromRight;
@@ -75,10 +66,10 @@
         width: 45%;
         font-size: 20px;
 
-
         p {
             margin-top: 20px;
             text-align: justify;
+            text-indent: 15px;
         }
 
         ul {
@@ -97,6 +88,7 @@
         h4 {
             margin-top: 20px;
             color: $color_green;
+            text-align: center;
         }
     }
 }
@@ -128,10 +120,13 @@
 
         .links_img {
             width: 30px;
+            margin-left: 3px;
         }
 
         span {
             margin-left: 10px;
+            margin-right: 3px;
+            padding-right: 2px;
             font-weight: 600;
         }
     }
@@ -186,7 +181,7 @@
         .links {
             margin-top: 0px;
             width: 80px;
-            padding: 3px 4px;
+            padding: 3px 6px;
             margin-left: 5px;
     
             .links_img {
@@ -194,6 +189,7 @@
             }
     
             span {
+                padding: 3px;
                 margin-left: 2px;
             }
         }
