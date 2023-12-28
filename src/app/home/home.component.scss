@@ -10,7 +10,8 @@
 
 
 .header_text {
-    margin: 60px auto;
+    margin: 20px auto;
+    margin-top: 60px;
     transform: rotate(355deg);
     display: flex;
     flex-direction: column;
@@ -43,9 +44,11 @@
 .info {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
     font-family: 'IBM Plex Sans', sans-serif;
     padding: 20px;
+    border-top: 4px solid $color_black;
+    padding-top: 40px;
+
 
     .info_photo_img {
         animation-name: fromBottom;
@@ -148,7 +151,6 @@
     }
 
     .info {
-
         margin-top: 20px;
         font-family: 'IBM Plex Sans', sans-serif;
         padding: 10px;

@@ -1,11 +1,14 @@
 .main_wrapper {
     position: relative;
+    background-color: #f4f4f4;
+
 
     .header {
         top: 0px;
         z-index: 2;
         width: 100%;
         position: fixed;
+      
 
         background-color: none;
         background: rgba(255, 255, 255, 0.2);
@@ -22,8 +25,9 @@ mat-sidenav {
 }
 
 mat-sidenav-content {
-    background-color: #f4f4f4;
     padding: 0 8px;
+    max-width: 1750px;
+    margin: 0 auto;
 }
 
 

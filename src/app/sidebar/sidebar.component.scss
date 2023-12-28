@@ -7,11 +7,12 @@ nav {
     height: 80vh;
     justify-content: space-between;
 
-    .sidebar_btn {
-        margin: 15px;
-        font-size: 20px;
-        font-weight: 400;
-    }
+}
+
+.sidebar_btn {
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .flag {
@@ -27,5 +28,8 @@ img {
 .language_btn {
     display: flex;
     border-top: 1px solid $color_black;
-    border-bottom: 1px solid $color_black;
+
+    &:last-child {
+        border-bottom: 1px solid $color_black;
+    }
 }

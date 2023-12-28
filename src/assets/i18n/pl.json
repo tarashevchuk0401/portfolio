@@ -26,5 +26,6 @@
   "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant.": "Strona internetowa dla małej restauracji (i cateringu). Pod maską znajduje się panel administracyjny, w którym właściciel może edytować całe menu, dodawać zdjęcia i zmieniać informacje o restauracji.",
   "In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.": "W tym projekcie współpracowałem z dizajnerem UI/UX. Nie zapomnij przełączyć się w aplikacji na język angielski.",
   "This project is a simple ToDo application built with Angular for the frontend and Node.js for the backend. Here we have authorization, so each user are able to see only own information .": "Ten projekt to prosta aplikacja ToDo zbudowana z Angularem dla frontendu i Node.js dla backendu. Tutaj mamy autoryzację, więc każdy użytkownik może zobaczyć tylko swoje informacje.",
-  "": ""
+  "Have any questions?": "Masz pytania?",
+  "Feel free to write me an email" : "Proszę napisać mi maila."
 }

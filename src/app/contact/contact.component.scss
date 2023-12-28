@@ -1,31 +1,55 @@
 @import '../variables.scss';
 
-:host{
+.wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-top: 25px;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
 }
 
-form{
+.text {
+    margin: 0 auto;
+
+    &>* {
+        text-align: center;
+        color: $color_green;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+form {
     width: 660px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    .form_section{
+    margin-top: 20px;
+
+    .form_section {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin: 15px;
 
 
-        label{
+        label {
             font-size: 20px;
             margin-right: 15px;
         }
 
-        input, textarea{
+        input,
+        textarea {
             width: 400px;
             font-size: 20px;
             padding: 10px;
@@ -35,15 +59,15 @@ form{
         }
     }
 
-    button{
+    button {
         margin: 10px auto;
     }
 
-    .invisible{
+    .invisible {
         visibility: hidden;
     }
 
-    .error{
+    .error {
         visibility: visible;
         color: red;
         text-align: center;
@@ -54,17 +78,18 @@ form{
 }
 
 @media (max-width: 768px) {
-    form{
+    form {
         width: 360px;
 
-        .form_section{
-            
-            label{
+        .form_section {
+
+            label {
                 font-size: 14px;
                 margin-right: 5px;
             }
-    
-            input, textarea{
+
+            input,
+            textarea {
                 width: 200px;
                 font-size: 14px;
                 padding: 7px;
@@ -72,14 +97,13 @@ form{
                 border-radius: 10px;
             }
         }
-    
-        button{
+
+        button {
             margin: 7px auto;
         }
-    
-        .error{
+
+        .error {
             font-size: 16px;
         }
     }
 }
-

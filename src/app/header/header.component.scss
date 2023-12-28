@@ -3,6 +3,8 @@
 .header_wrapper {
     animation-duration: .7s;
     animation-timing-function: ease-in;
+    display: flex;
+    justify-content: center;
 }
 
 .menu_btn {
@@ -13,8 +15,8 @@
 .action {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    flex-grow: 1;
+    max-width: 1800px;
 
     .action_section {
         margin: 0 20px;
@@ -32,7 +34,10 @@
 .language_btn {
     display: flex;
     border-top: 1px solid $color_black;
-    border-bottom: 1px solid $color_black;
+
+    &:last-child{
+        border-bottom: 1px solid $color_black;
+    }
 }
 
 .flag {

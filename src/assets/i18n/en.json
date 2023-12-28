@@ -26,6 +26,7 @@
   "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant.": "Website for small restaurant (and catering). Under the hood is an administration panel where the owner can edit all menu, upload photos and change information about the restaurant.",
   "In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.": "In this project, I've been working with UI/UX designer and improve my communication skills with the client. Don't forget to switch to English language in the application.",
   "This project is a simple ToDo application built with Angular for the frontend and Node.js for the backend. Here we have authorization, so each user are able to see only own information .": "This project is a simple ToDo application built with Angular for the frontend and Node.js for the backend. Here we have authorization, so each user are able to see only own information .",
-  "": ""
+  "Have any questions?": "Have any questions?",
+  "Feel free to write me an email" : "Feel free to write me an email."
 
 }
